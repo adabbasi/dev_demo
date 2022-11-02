@@ -1,7 +1,7 @@
 <odoo>
     <data>
         
-   <template id="index">
+    <template id="index">
          <title>Academy</title>
          <t t-foreach="teachers" t-as="teacher">
              <p><t t-esc="teacher.id"/> <t t-esc="teacher.name"/></p>
