@@ -1,20 +1,42 @@
 <odoo>
     <data>
         
-     <template id="index">
+     <template id="biography">
         <t t-call="website.layout">
             <t t-set="title">Academy</t>
-            <div class="oe_structure">
-                <div class="container">
-                    <t t-foreach="teachers" t-as="teacher">
-                        <p><t t-esc="teacher.id"/> <t t-esc="teacher.name"/></p>
-                    </t>
+              <div class="oe_structure"/>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h3><t t-esc="person.name"/></h3>
+                    </div>
                 </div>
+            <div class="oe_structure"/>
+         </t>
+      </template>
+        
+   <template id="index">
+    <t t-call="website.layout">
+        <t t-set="title">Academy</t>
+        <div class="oe_structure">
+            <div class="container">
+                <t t-foreach="teachers" t-as="teacher">
+                    <p>
+                        <a t-attf-href="/academy/{{ slug(teacher) }}">
+                        <t t-esc="teacher.name"/></a>
+                    </p>
+                </t>
             </div>
-        </t>
-    </template>
-
+        </div>
+    </t>
+  </template>
+  
+  
 <!--
+
+
+
+
+
         <template id="listing">
           <ul>
             <li t-foreach="objects" t-as="object">
