@@ -1,7 +1,7 @@
 <odoo>
     <data>
         
-    <template id="biography">
+     <template id="biography">
         <t t-call="website.layout">
             <t t-set="title">Academy</t>
               <div class="oe_structure"/>
