@@ -14,7 +14,10 @@
     </t>
  </template>
         
-  <template id="index">
+       
+<!--
+
+ <template id="index">
     <t t-call="website.layout">
         <t t-set="title">Academy</t>
         <div class="oe_structure">
@@ -28,8 +31,11 @@
             </div>
         </div>
     </t>
-  </template>      
-<!--
+  </template>
+
+
+
+
         <template id="listing">
           <ul>
             <li t-foreach="objects" t-as="object">
