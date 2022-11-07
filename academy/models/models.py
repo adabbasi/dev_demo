@@ -8,6 +8,7 @@ class Teachers(models.Model):
     _name = 'academy.teachers'
 
     name = fields.Char()
+    biography = fields.Html()
 # class academy(models.Model):
 #     _name = 'academy.academy'
 #     _description = 'academy.academy'
