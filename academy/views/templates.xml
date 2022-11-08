@@ -10,6 +10,7 @@
                        <h3 t-field="person.name"/>
                          <p>Last modified: <i t-field="person.write_date" t-options='{"widget": "relative"}'/></p>
                         <div t-field="person.biography"/>
+                        <div t-field="person.course_i"/>
                     </div>
                 </div>
             <div class="oe_structure"/>
